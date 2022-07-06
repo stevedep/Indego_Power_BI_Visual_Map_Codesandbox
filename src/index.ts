@@ -7,6 +7,23 @@ import powerbi from "powerbi-visuals-api";
 import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
 import DataView = powerbi.DataView;
 
+import ISelectionManager = powerbi.extensibility.ISelectionManager; // added for selections
+import ISelectionId = powerbi.visuals.ISelectionId; //added for selections
+import IVisualHost = powerbi.extensibility.visual.IVisualHost; // added for selections
+
+interface ETRange {
+  id: number;
+  start: number;
+  eind: number;
+  state: number;
+  duration: number;
+  cum_duration: number;
+  width: number;
+  endhour: number;
+  starttime: Date;
+  sels: ISelectionId[];
+}
+
 class Visual {
   private svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>; // diff from org.
   container: d3.Selection<SVGGElement, any, any, any>;
