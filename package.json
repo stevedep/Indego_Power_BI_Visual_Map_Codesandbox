@@ -1,0 +1,27 @@
+{
+  "name": "power-bi-indego-map-draw-svg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@types/d3": "5.7.2",
+    "d3": "5.12.0",
+    "powerbi-visuals-api": "3.8.2",
+    "powerbi-visuals-utils-dataviewutils": "2.2.1",
+    "typescript": "3.6.3"
+  },
+  "devDependencies": {
+    "ts-loader": "6.1.0",
+    "tslint": "^5.18.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "typescript": "3.6.3"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": []
+}
